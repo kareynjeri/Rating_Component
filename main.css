@@ -45,7 +45,7 @@ body {
             hsl(220, 20%, 24%) -50%,
             hsl(215, 27%, 12%) 50% 100%);
     padding: 30px;
-    margin-right: 50px;
+
 }
 
 
@@ -137,7 +137,7 @@ body {
 }
 
 .thankyou-state {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -150,12 +150,6 @@ body {
             hsl(215, 27%, 12%) 50% 100%);
     padding: 30px;
 
-}
-
-
-
-.card_hide {
-    display: none;
 }
 
 .wrapper {

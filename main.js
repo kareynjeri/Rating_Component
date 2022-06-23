@@ -1,7 +1,7 @@
 //get elements
 const btns = document.querySelectorAll(".card-btn");
-const submit = document.querySelectorAll("#submit-button");
-let thankyou_state = document.getElementsByClassName("thankyou-state");
+const submit = document.querySelector("#submit-button");
+let thankyou_state = document.querySelector(".thankyou-state");
 let maincontent = document.querySelector(".card");
 
 //change color of button on click
@@ -13,12 +13,16 @@ for (let btn of btns) {
   });
 }
 
+
+//counter for the buttons 
+
+
 // //submit-button --> when clicked changes the current to a thankyou card
-submit.addEventListener("click", showCard);
+
 function showCard() {
-  console.log("hiding main card and showing thank you state card");
-  maincontent.style.display = "flex";
-  thankyou_state.style.display = "none";
-  console.log("show thank you card");
+  thankyou_state.style.display = "block";
+  maincontent.style.display = "none";
+ 
 }
+submit.addEventListener('click', showCard);
 
